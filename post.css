@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background: #fff; */
+    background-color: #1f1e1e;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* overflow: hidden; */
+    
+    /* background-color: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #858484; 
+    top:0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0.5rem 3%;    
+}
+.header .logo{
+    font-size:2rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Young Serif', serif;
+}
+.header .list .navlink{ 
+    color:#000;
+    text-decoration: none;
+    font-size:1.5rem;
+    margin-left:2.5rem;
+}
+.header .logo-img{
+    background-color: #fff;
+    background-color: 1px white solid;
+    border-radius: 20px;
+    margin-top:5px;
+}
+.list .navlink:hover{
+    text-decoration:underline ;
+    color: rgb(65, 20, 72);
+}
+.header .bar-btn{
+    display: none;
+}
+.header .bar-btn .bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
+}
+
+.main-container{
+    margin: 100px 0;
+    /* background-color: green; */
+}
+.content{
+  
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    /* left: 200px;
+    right:200px; */
+    background-color: rgb(28, 28, 29);
+    border:2px solid rgb(6, 6, 6);
+    box-shadow: 0 0 20px rgb(61, 61, 61);
+}
+.content h3{
+    color: rgb(205, 202, 208);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.content img{
+    display:block;
+    margin: auto;
+    width: 400px;
+    height: 250px;
+}
+.content .con p{
+     margin: 50px;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer{
+    height: 1%;
+}
+
+
+
+
+@media  screen and (max-width:1320px){
+   
+    .header{
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width:1281px){
+    body{
+        height: 330vh;
+    }
+    .header{
+        padding: 7px 15px;
+        max-width:1280px;
+    } 
+    .header .list .navlink{ 
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:1025px) {
+    
+    /* .header{
+        padding: 0 5px;
+    } 
+    .header .navbar ul{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap:40px;
+    }
+    /* li a{
+        font-size: 1.2rem;
+    }  */ 
+    .header{
+        padding: 3px 10px;}
+        .header .list .navlink{ 
+            font-size: 1rem;
+        }
+    .content{
+        left:150px;
+        right:150px;
+    }
+}
+/* @media screen and (min-width:1024px) {
+  
+    .header{
+        padding: 7.5px;
+    }
+    .header .list .navlink{
+        font-size: 0.7rem;
+        padding:0;
+    }
+} */
+@media screen and (max-width:913px){
+   
+    .header{
+        max-width:912px; 
+        padding: 0.5rem 2%; 
+        position:fixed;
+        top:0;
+    }
+    .header .bar-btn{
+        display:block;
+    }
+    .bar-btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .bar-btn.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bar-btn.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .list{
+       max-width:912px;
+       position:absolute;
+       top:100%;
+       left:-110%;
+       width:100%;
+       height:23rem;
+       background-color: rgb(248, 243, 243);
+       transition: .5s ease;
+    }
+    .list .navlink{
+        display:block;
+        font-size:1.1rem;
+        margin:1.8rem 0;
+        text-align:  center;
+        
+       
+    }  
+    
+    .list.act{
+        left: 0;
+    }
+    .content{
+        left: 80px;
+        right: 80px;
+        text-align: justify;
+        }
+        }
+        @media screen  and (max-width:821px) {
+            body{
+                height: 268vh;
+            }
+        }
+        @media screen  and (max-width:769px) {
+            body{
+                height: 325vh;
+            }
+        }
+    @media screen  and (max-width:541px) {
+       
+        .content{
+            left: 45px;
+            right: 45px;}
+        .content h3{
+            font-size: 0.9rem;
+         
+        } 
+        .content img{
+            width:200px;
+            height:100px;
+        }
+        /* .content .con p{
+            font-size: 0.8rem;
+            margin-bottom:30px;
+        } */
+    }
+    @media screen and (max-width:431px) {
+       
+        .content{
+            left: 30px;
+            right: 30px}
+        .content p{
+            font-size:0.9rem;
+        }
+        
+    }
+    @media screen and (max-width:415px) {
+       
+        .content h3{
+            font-size:1.05rem;
+            font-weight: bold;
+        }
+        .content{
+            left: 27px;
+            right: 27px}
+        .content p{
+            font-size:0.9rem;
+        }
+    }
+    @media screen and (max-width:413px) {
+        body{
+            height: 490vh;
+        }}
+   @media screen and (max-width:391px) {
+   
+    .content{
+            left: 24px;
+            right: 24px;
+        }
+    
+    }
+    @media screen and (max-width:376px) {
+       
+        .content{
+            left: 23px;
+            right: 23px;
+        }
+        .content h3{
+            font-size:1rem;
+            font-weight: bold;
+        }
+        .content p{
+            font-size:0.85rem;
+        }
+    }
+    @media screen and (max-width:361px) {
+       
+        .content{
+            left: 25px;
+            right: 25px;
+        }
+        .content h3{
+            font-size:0.9rem;
+            font-weight: bold;
+        }
+        .content p{
+            font-size:0.75rem;
+        }
+    }   
+    @media screen and (max-width:281px) {
+        
+       .content p{
+        font-size:0.7rem;
+    }}
